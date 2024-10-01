@@ -1,0 +1,37 @@
+inherit: 
+    - models/standard.yaml
+    - wandb.yaml
+
+model:
+    n_dims: 5
+    n_positions: 11
+
+training:
+    task: linear_regression
+    data: gaussian
+    task_kwargs: {}
+    support_size: 64
+    query_size: 64
+    learning_rate: 0.01
+    meta_learning_rate: 0.0001
+    save_every_steps: 1000
+    keep_every_steps: 2000
+    train_steps: 5
+    meta_train_steps: 100001
+    curriculum:
+        dims:
+            start: 5
+            end: 5
+            inc: 1
+            interval: 2000
+        points:
+            start: 11
+            end: 11
+            inc: 2
+            interval: 2000
+
+out_dir: ../models/meta
+test_run: False
+
+wandb:
+    name: "meta"

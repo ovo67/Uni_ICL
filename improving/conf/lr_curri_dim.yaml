@@ -1,0 +1,21 @@
+inherit: 
+    - base_curri.yaml
+
+training:
+    task: linear_regression
+    curriculum:
+        points:
+            start: 41
+            end: 41
+            inc: 0
+            interval: 2000
+        dims:
+            start: 5
+            end: 20
+            inc: 1
+            interval: 10000
+
+out_dir: ../models/lr_curri
+
+wandb:
+    name: "cur_lr_dim"
