@@ -1,5 +1,5 @@
-# Advantages, Risks and Insights from Comparing In-Context Learning Models with Typical Meta-Learners
-
+# Why In-Context Learning Models are Good Few-Shot Learners?
+paper: https://openreview.net/pdf?id=iLUcsecZJp
 
 ##  Investigating ICL model does learn data-dependent optimaml learning algorithms on single/mixed type of tasks:
 * install tools for transformer models from public code (https://github.com/lucidrains/linear-attention-transformer); 
@@ -19,3 +19,9 @@ Paper: http://arxiv.org/abs/2208.01066;
 * run `python train.py --config conf/lr_curri_0.yaml` for training ICL model; run `python train.py --config conf/lr_curri_dim.yaml` for training ICL model with meta-level curriculum about dimension;
 * run `python meta_rain.py --config conf/meta.yaml` for training ICL model with meta-level meta-learning;
 * run `python ceval.py` for meta-testing the trained learners and showing the results.
+
+@inproceedings{wucontext,
+  title={Why In-Context Learning Models are Good Few-Shot Learners?},
+  author={Wu, Shiguang and Wang, Yaqing and Yao, Quanming},
+  booktitle={The Thirteenth International Conference on Learning Representations}
+}
