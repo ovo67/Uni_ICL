@@ -17,7 +17,7 @@ Paper: http://arxiv.org/abs/2208.01066;
 * get the public code (https://github.com/dtsip/in-context-learning); 
 * copy './improving/conf/.' to 'in-context-learning/src/conf/'; copy './improving/cevel.py' and './improving/meta_train.py' to 'in-context-learning/src/';
 * run `python train.py --config conf/lr_curri_0.yaml` for training ICL model; run `python train.py --config conf/lr_curri_dim.yaml` for training ICL model with meta-level curriculum about dimension;
-* run `python meta_rain.py --config conf/meta.yaml` for training ICL model with meta-level meta-learning;
+* run `python meta_train.py --config conf/meta.yaml` for training ICL model with meta-level meta-learning;
 * run `python ceval.py` for meta-testing the trained learners and showing the results.
 
 @inproceedings{wucontext,
